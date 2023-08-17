@@ -6,7 +6,9 @@ map Q gq
 let mapleader = " "
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
-Plug 'preservim/nerdtree'
+
+set NERDTree
+
 
 " actions
 nmap <leader>h <action>(PreviousTab)
