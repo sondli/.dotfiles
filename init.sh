@@ -5,10 +5,6 @@
 
 DOTFILES="$HOME/dotfiles"
 
-echo "Setting ENV.."
-
-export TMUX_PLUGIN_MANAGER_PATH="$HOME/.tmux/plugins"
-
 echo "Creating symlinks..."
 
 ln -s $DOTFILES/nvim ~/.config
