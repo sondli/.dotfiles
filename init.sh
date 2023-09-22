@@ -9,11 +9,14 @@
 
 DOTFILES="$HOME/dotfiles"
 
+echo "Copying .ideavimrc..."
+
+cp $DOTFILES/ideavim/.ideavimrc $USERPROFILE/.ideavimrc
+
 echo "Creating symlinks..."
 
 ln -s $DOTFILES/bash/.bashrc ~/
 ln -s $DOTFILES/nvim ~/.config
 ln -s $DOTFILES/tmux ~/.config
 ln -s $DOTFILES/hushlogin/.hushlogin ~/
-cp $DOTFILES/ideavim/.ideavimrc $USERPROFILE/.ideavimrc
 
