@@ -15,5 +15,5 @@ ln -s $DOTFILES/bash/.bashrc ~/
 ln -s $DOTFILES/nvim ~/.config
 ln -s $DOTFILES/tmux ~/.config
 ln -s $DOTFILES/hushlogin/.hushlogin ~/
-ln -s $DOTFILES/ideavim/.ideavimrc $USERPROFILE
+cp $DOTFILES/ideavim/.ideavimrc $USERPROFILE/.ideavimrc
 
