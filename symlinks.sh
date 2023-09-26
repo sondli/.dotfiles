@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DOTFILES="$HOME/.dotfiles"
+
 echo "Creating symlinks..."
 
 ln -s $DOTFILES/nvim ~/.config
