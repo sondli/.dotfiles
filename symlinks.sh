@@ -11,4 +11,5 @@ ln -s $DOTFILES/tmux ~/.config
 ln -s $DOTFILES/polybar ~/.config
 ln -s $DOTFILES/i3 ~/.config
 ln -s $DOTFILES/xinit/.xinitrc ~/
+ln -s $DOTFILES/alacritty ~/.config
 
