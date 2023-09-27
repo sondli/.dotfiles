@@ -14,5 +14,8 @@ parse_git_branch() {
 
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-#ENV
+##ENV
 export XDG_CONFIG_HOME="$HOME/.config"
+##dotnet
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
