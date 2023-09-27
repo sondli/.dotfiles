@@ -7,4 +7,8 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
 PS1='[\u@\h \W]\$ '
+
+#ENV
+export XDG_CONFIG_HOME="$HOME/.config"
