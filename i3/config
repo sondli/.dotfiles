@@ -191,6 +191,9 @@ bindsym $mod+r mode "resize"
 
 default_border pixel 3
 
+# Customs binds
+bindsym $mod+Shift+i exec "i3lock"
+
 exec "xrandr --dpi 144"
 
 exec_always --no-startup-id polybar &
