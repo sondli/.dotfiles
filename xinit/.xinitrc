@@ -1,7 +1,7 @@
 #!/bin/sh
 
 alacritty &
-feh --bg-fill --randomize ~/wallpapers/mountain.jpg &
+wal -R
 picom &
 
 exec i3
