@@ -7,11 +7,11 @@
 #This should make the windows user profile available as as ENV in wsl
 #If you don't need any dotfiles to link from wsl to Windows (any line that uses $USERPROFILE) you can ignore this step
 
-DOTFILES="$HOME/dotfiles"
+DOTFILES="$HOME/.dotfiles"
 
-echo "Copying .ideavimrc..."
+#echo "Copying .ideavimrc..."
 
-cp $DOTFILES/ideavim/.ideavimrc $USERPROFILE/.ideavimrc
+#cp $DOTFILES/ideavim/.ideavimrc $USERPROFILE/.ideavimrc
 
 echo "Creating symlinks..."
 
