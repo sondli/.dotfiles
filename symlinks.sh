@@ -9,7 +9,6 @@ ln -s $PWD/ranger ~/.config
 if [[ $(grep -i Microsoft /proc/version) ]]
 then
     # WSL specific commands 
-    echo "$PWD" 
     :
 else
     # Non-WSL commands
