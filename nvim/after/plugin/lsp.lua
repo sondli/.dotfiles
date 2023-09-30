@@ -48,3 +48,13 @@ require('lspconfig').lua_ls.setup(
 })
 require('lspconfig').csharp_ls.setup({})
 require('lspconfig').tsserver.setup({})
+
+
+-- lsp autocomplete config
+local cmp = require('cmp')
+
+cmp.setup({
+  mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({select = true}),
+  })
+})

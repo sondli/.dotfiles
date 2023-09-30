@@ -197,6 +197,9 @@ gaps inner 5px
 # Customs binds
 bindsym $mod+Shift+i exec "i3lock-fancy"
 
+bindsym $mod+p move workspace to output right
+bindsym $mod+o move workspace to output left
+
 exec "xrandr --dpi 144"
 
 exec_always --no-startup-id polybar &

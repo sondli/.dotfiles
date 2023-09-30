@@ -18,6 +18,8 @@ require("lazy").setup({
   { "ThePrimeagen/harpoon" },
   { "tpope/vim-fugitive" },
   { "mbbill/undotree" },
+  { "folke/tokyonight.nvim" },
+  { "nvim-lualine/lualine.nvim" },
   -- LSP ZERO
   {"williamboman/mason.nvim"},
   {"williamboman/mason-lspconfig.nvim"},
@@ -26,6 +28,4 @@ require("lazy").setup({
   {"hrsh7th/cmp-nvim-lsp"},
   {"hrsh7th/nvim-cmp"},
   {"L3MON4D3/LuaSnip"},
-
-
 })
