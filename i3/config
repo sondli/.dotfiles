@@ -195,7 +195,7 @@ default_border pixel 3
 gaps inner 5px
 
 # Customs binds
-bindsym $mod+Shift+i exec "i3lock-fancy"
+bindsym $mod+Shift+i exec "i3lock"
 
 bindsym $mod+p move workspace to output right
 bindsym $mod+o move workspace to output left

@@ -48,7 +48,7 @@ require('lspconfig').lua_ls.setup(
 })
 require('lspconfig').csharp_ls.setup({})
 require('lspconfig').tsserver.setup({})
-
+require('lspconfig').jsonls.setup({})
 
 -- lsp autocomplete config
 local cmp = require('cmp')
