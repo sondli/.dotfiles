@@ -12,7 +12,11 @@ dap.configurations.cs = {
     name = "launch - netcoredbg",
     request = "launch",
     program = function()
-        return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+        return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/net7.0', 'file')
     end,
+    env = {
+        ASPNETCORE_ENVIRONMENT = "Local",
+        ASPNETCORE_URLS = "https://localhost:9000"
+    }
   },
 }
