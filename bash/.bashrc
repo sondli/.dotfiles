@@ -9,9 +9,11 @@ stty -ixon
 
 alias ls='ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
-alias cddot='cd ~/.dotfiles'
-alias cdpro='cd ~/projects'
-alias nvimedit='cd ~/.dotfiles/nvim && nvim .'
+alias cdd='cd ~/.dotfiles'
+alias cdp='cd ~/projects'
+alias vime='cd ~/.dotfiles/nvim && nvim .'
+alias vim='nvim'
+
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
