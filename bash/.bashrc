@@ -37,3 +37,4 @@ export RANGER_LOAD_DEFAULT_RC=False
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 export ASPNETCORE_ENVIRONMENT=Local
+export PATH=$PATH:~/azure-functions-cli

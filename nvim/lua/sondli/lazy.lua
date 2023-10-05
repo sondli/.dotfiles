@@ -22,6 +22,7 @@ require("lazy").setup({
   { "nvim-lualine/lualine.nvim" },
   { "mfussenegger/nvim-dap" },
   { "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap" } },
+  { "theHamsta/nvim-dap-virtual-text" },
   -- LSP ZERO
   {"williamboman/mason.nvim"},
   {"williamboman/mason-lspconfig.nvim"},
