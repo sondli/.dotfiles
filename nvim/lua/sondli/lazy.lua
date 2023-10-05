@@ -12,8 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    { "nvim-telescope/telescope.nvim",   tag = "0.1.3",                             dependencies = {
-        "nvim-lua/plenary.nvim" } },
+    {
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.3",
+        dependencies = {
+            "nvim-lua/plenary.nvim" }
+    },
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { "dylanaraps/wal.vim" },
     { "ThePrimeagen/harpoon" },
@@ -32,6 +36,15 @@ require("lazy").setup({
             "nvim-treesitter/nvim-treesitter",
             "antoinemadec/FixCursorHold.nvim",
             "Issafalcon/neotest-dotnet"
+        }
+    },
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {},
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
         }
     },
     -- LSP ZERO
