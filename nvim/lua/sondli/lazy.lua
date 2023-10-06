@@ -44,7 +44,7 @@ require("lazy").setup({
         opts = {},
         dependencies = {
             "MunifTanjim/nui.nvim",
-            "rcarriga/nvim-notify",
+            --"rcarriga/nvim-notify",
         }
     },
     -- LSP ZERO
