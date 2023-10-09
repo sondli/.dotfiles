@@ -34,7 +34,4 @@ fi
 export XDG_CONFIG_HOME="$HOME/.config"
 export RANGER_LOAD_DEFAULT_RC=False
 ##dotnet
-export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 export ASPNETCORE_ENVIRONMENT=Local
-export PATH=$PATH:~/azure-functions-cli

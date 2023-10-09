@@ -21,7 +21,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'tsserver', 'omnisharp', 'azure_pipelines_ls', 'jsonls', 'lua_ls' },
+    ensure_installed = { 'tsserver', 'omnisharp', 'azure_pipelines_ls', 'jsonls', 'lua_ls', 'gopls' },
     handlers = {
         lsp_zero.default_setup,
     },
