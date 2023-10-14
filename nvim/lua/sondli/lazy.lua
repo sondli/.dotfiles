@@ -20,12 +20,13 @@ require("lazy").setup({
     },
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { "dylanaraps/wal.vim" },
-    { "ThePrimeagen/harpoon" },
+--    { "ThePrimeagen/harpoon" },
     { "tpope/vim-fugitive" },
     { "mbbill/undotree" },
     { "folke/tokyonight.nvim" },
     { "nvim-lualine/lualine.nvim" },
     { "mfussenegger/nvim-dap" },
+    { "leoluz/nvim-dap-go" },
     { "rcarriga/nvim-dap-ui",            dependencies = { "mfussenegger/nvim-dap" } },
     { "theHamsta/nvim-dap-virtual-text" },
     { "folke/neodev.nvim",               opts = {} },
@@ -38,7 +39,7 @@ require("lazy").setup({
             "Issafalcon/neotest-dotnet"
         }
     },
-    {
+--[[    {
         "folke/noice.nvim",
         event = "VeryLazy",
         opts = {},
@@ -46,7 +47,7 @@ require("lazy").setup({
             "MunifTanjim/nui.nvim",
             --"rcarriga/nvim-notify",
         }
-    },
+    },--]]
     {
         'kristijanhusak/vim-dadbod-ui',
         dependencies = {
