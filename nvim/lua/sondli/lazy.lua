@@ -30,6 +30,7 @@ require("lazy").setup({
     { "rcarriga/nvim-dap-ui",            dependencies = { "mfussenegger/nvim-dap" } },
     { "theHamsta/nvim-dap-virtual-text" },
     { "folke/neodev.nvim",               opts = {} },
+    { "nvim-tree/nvim-tree.lua",         dependencies = { "nvim-tree/nvim-web-devicons" } },
     {
         "nvim-neotest/neotest",
         dependencies = {
@@ -39,7 +40,7 @@ require("lazy").setup({
             "Issafalcon/neotest-dotnet"
         }
     },
---[[    {
+    --[[    {
         "folke/noice.nvim",
         event = "VeryLazy",
         opts = {},
