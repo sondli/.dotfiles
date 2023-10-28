@@ -14,13 +14,39 @@ dap.configurations.cs = {
         name = "launch - netcoredbg",
         request = "launch",
         program = function()
-            return vim.fn.input('Path to dll', vim.fn.getcwd() .. '/bin/Debug/net7.0', 'file')
+            local requestDll = function()
+                return vim.fn.input({
+                    prompt = 'Path to dll: ',
+                    default = vim.fn.getcwd() .. '/bin/Debug/',
+                    completion = 'file'
+                })
+            end
+
+            if vim.g['dotnet_last_dll_path'] == nil then
+                vim.g['dotnet_last_dll_path'] = requestDll()
+            else
+                if vim.fn.confirm('Do you want to change the path to dll?\n' .. vim.g['dotnet_last_dll_path'],
+                        '&yes\n&no', 2) == 1 then
+                    vim.g['dotnet_last_dll_path'] = requestDll()
+                end
+            end
+            return vim.g['dotnet_last_dll_path']
         end,
         env = function()
-            local port = vim.fn.input({ prompt = "Port: " })
+            local requestPort = function()
+                return vim.fn.input({ prompt = "Port: " })
+            end
+            if vim.g['dotnet_last_port'] == nil then
+                vim.g['dotnet_last_port'] = requestPort()
+            else
+                if vim.fn.confirm('Do you want to change the port?\n' .. vim.g['dotnet_last_port'],
+                        '&yes\n&no', 2) == 1 then
+                    vim.g['dotnet_last_port'] = requestPort()
+                end
+            end
             return {
                 ASPNETCORE_ENVIRONMENT = "Local",
-                ASPNETCORE_URLS = "https://localhost:" .. port
+                ASPNETCORE_URLS = "https://localhost:" .. vim.g['dotnet_last_port']
             }
         end
     },
