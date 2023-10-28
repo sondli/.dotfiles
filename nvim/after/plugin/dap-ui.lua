@@ -1,5 +1,8 @@
 local dap, dapui = require("dap"), require("dapui")
 
+
+vim.keymap.set("n", "<leader>dt", "<Cmd>lua require('dapui').toggle()<CR>")
+
 dapui.setup({
   icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
   mappings = {
@@ -13,7 +16,8 @@ dapui.setup({
   },
   -- Use this to override mappings for specific elements
   element_mappings = {
-    -- Example:
+    -- Exampleo
+    --
     -- stacks = {
     --   open = "<CR>",
     --   expand = "o",
@@ -23,7 +27,7 @@ dapui.setup({
   -- Requires >= 0.7
   expand_lines = vim.fn.has("nvim-0.7") == 1,
   -- Layouts define sections of the screen to place windows.
-  -- The position can be "left", "right", "top" or "bottom".
+  -- The position can be "left", "right", "top" or "bottoo".
   -- The size specifies the height/width depending on position. It can be an Int
   -- or a Float. Integer specifies height/width directly (i.e. 20 lines/columns) while
   -- Float value specifies percentage (i.e. 0.3 - 30% of available lines/columns)

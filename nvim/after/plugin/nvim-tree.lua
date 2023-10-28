@@ -10,6 +10,6 @@ vim.opt.termguicolors = true
 -- OR setup with some options
 require("nvim-tree").setup({
   filters = {
-    dotfiles = true,
+    dotfiles = false
   }
 })
