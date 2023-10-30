@@ -9,7 +9,14 @@ vim.opt.termguicolors = true
 
 -- OR setup with some options
 require("nvim-tree").setup({
-  filters = {
-    dotfiles = false
-  }
+    filters = {
+        dotfiles = false
+    },
+    actions = {
+        open_file = {
+            quit_on_open = true
+        }
+    }
+
+
 })
