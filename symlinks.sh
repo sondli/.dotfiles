@@ -5,6 +5,7 @@ ln -s $PWD/bash/.bash_profile ~/
 ln -s $PWD/nvim ~/.config
 ln -s $PWD/tmux ~/.config
 ln -s $PWD/ranger ~/.config
+ln -s $PWD/starship ~/.config
 
 if [[ $(grep -i Microsoft /proc/version) ]]
 then

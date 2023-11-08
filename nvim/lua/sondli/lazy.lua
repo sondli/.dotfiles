@@ -20,6 +20,7 @@ require("lazy").setup({
     },
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { "dylanaraps/wal.vim" },
+    { "github/copilot.vim" },
     { "ThePrimeagen/harpoon" },
     { "tpope/vim-fugitive" },
     { "mbbill/undotree" },
