@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
 
 default_border pixel 3
 
-gaps inner 5px
+#gaps inner 5px
 
 # Customs binds
 bindsym $mod+Shift+i exec "i3lock"
@@ -202,4 +202,14 @@ bindsym $mod+o move workspace to output left
 
 exec "xrandr --dpi 144"
 
-exec_always --no-startup-id polybar &
+assign [class="Brave-browser"] → number 2
+assign [class="discord"] → number 3
+
+for_window [class="discord"] move to workspace number 3
+
+# start initial programs
+exec --no-startup-id brave &
+exec --no-startup-id discord &
+
+# Finally start polybar
+exec_always ~/.config/polybar/launch.sh --shapes &
