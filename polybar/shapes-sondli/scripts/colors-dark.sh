@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Color files
-PFILE="$HOME/.config/polybar/shapes/colors.ini"
-RFILE="$HOME/.config/polybar/shapes/scripts/rofi/colors.rasi"
+PFILE="$HOME/.config/polybar/shapes-sondli/colors.ini"
+RFILE="$HOME/.config/polybar/shapes-sondli/scripts/rofi/colors.rasi"
 
 # Change colors
 change_color() {
