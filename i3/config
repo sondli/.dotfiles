@@ -212,4 +212,4 @@ exec --no-startup-id brave &
 exec --no-startup-id discord &
 
 # Finally start polybar
-exec_always ~/.config/polybar/launch.sh --shapes &
+exec_always ~/.config/polybar/launch.sh --shapes-sondli &

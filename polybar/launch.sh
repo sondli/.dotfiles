@@ -72,7 +72,7 @@ elif [[ "$1" == "--panels" ]]; then
 	launch_bar
 
 elif [[ "$1" == "--shapes-sondli" ]]; then
-	style="panels"
+	style="shapes-sondli"
 	launch_bar
 
 else
