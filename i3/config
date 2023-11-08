@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
 
 default_border pixel 3
 
-#gaps inner 5px
+gaps inner 10px
 
 # Customs binds
 bindsym $mod+Shift+i exec "i3lock"
