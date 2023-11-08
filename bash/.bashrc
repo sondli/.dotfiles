@@ -27,7 +27,8 @@ then
     export LS_COLORS=$LS_COLORS:'ow=1;34:';
 else
     # Non-WSL commands
-    (cat ~/.cache/wal/sequences &)
+    #(cat ~/.cache/wal/sequences &)
+    :
 fi  
 
 ##ENV
