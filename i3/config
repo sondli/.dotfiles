@@ -208,6 +208,7 @@ assign [class="discord"] → number 3
 for_window [class="discord"] move to workspace number 3
 
 # start initial programs
+exec --no-startup-id alacritty -e sh -c "tmux a || tmux " &
 exec --no-startup-id brave &
 exec --no-startup-id discord &
 
