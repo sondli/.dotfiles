@@ -41,7 +41,7 @@ require("lazy").setup({
             "Issafalcon/neotest-dotnet"
         }
     },
-    {
+--[[    {
         "folke/noice.nvim",
         event = "VeryLazy",
         opts = {},
@@ -49,7 +49,7 @@ require("lazy").setup({
             "MunifTanjim/nui.nvim",
             "rcarriga/nvim-notify",
         }
-    },
+    },--]]
     {
         'kristijanhusak/vim-dadbod-ui',
         dependencies = {

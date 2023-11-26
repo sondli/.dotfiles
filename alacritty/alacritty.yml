@@ -184,13 +184,13 @@ window:
 # Font configuration
 font:
     normal:
-        family: SauceCodePro Nerd Font
+        family: JetBrainsMono NF
         style: Regular
     bold:
-        family: SauceCodePro Nerd Font
+        family: JetBrainsMono NF
         style: Bold
     italic:
-        family: SauceCodePro Nerd Font
+        family: JetBrainsMono NF
         style: Italic
 
     # Point size of the font
