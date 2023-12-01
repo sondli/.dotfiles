@@ -13,6 +13,7 @@ alias cdd='cd ~/.dotfiles'
 alias cdp='cd ~/projects'
 alias vime='cd ~/.dotfiles/nvim && nvim .'
 alias vim='nvim'
+alias sd="cd ~ && cd \$(find * -type d | fzf)"
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

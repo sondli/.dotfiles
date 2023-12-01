@@ -25,6 +25,7 @@ require("lazy").setup({
     { "tpope/vim-fugitive" },
     { "mbbill/undotree" },
     { "folke/tokyonight.nvim" },
+    { "windwp/nvim-ts-autotag" },
     { "nvim-lualine/lualine.nvim" },
     { "mfussenegger/nvim-dap" },
     { "leoluz/nvim-dap-go" },
