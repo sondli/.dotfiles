@@ -3,7 +3,7 @@ local dap = require('dap')
 dap.adapters.coreclr = {
     type = 'executable',
     command = '/usr/bin/netcoredbg',
-    args = { '--interpreter=vscode' }
+    args = { '--interpreter=vscode', '-- ~/.dotnet/dotnet' }
 }
 
 --https://github.com/WhiteBlackGoose/dotfiles/blob/nixos/app-config/nvim/lua/settings/dap.lua

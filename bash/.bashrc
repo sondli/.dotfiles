@@ -7,6 +7,7 @@ alias cdp='cd ~/projects'
 alias vime='cd ~/.dotfiles/nvim && nvim .'
 alias vim='nvim'
 alias sd="cd ~ && cd \$(find * -type d | fzf)"
+alias tr='tmux a || tmux'
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export RANGER_LOAD_DEFAULT_RC=False
