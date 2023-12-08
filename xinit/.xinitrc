@@ -2,6 +2,7 @@
 
 setxkbmap -layout us,no 
 
+
 #feh --bg-scale ~/wallpapers/tokyo.jpg &
 #picom &
 
