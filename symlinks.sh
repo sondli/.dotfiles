@@ -15,6 +15,8 @@ else
     # Non-WSL commands
     ln -s $PWD/polybar ~/.config
     ln -s $PWD/i3 ~/.config
+    ln -s $PWD/hypr ~/.config
+    ln -s $PWD/waybar ~/.config
     ln -s $PWD/xinit/.xinitrc ~/
     ln -s $PWD/alacritty ~/.config
     ln -s $PWD/picom ~/.config

@@ -20,12 +20,10 @@ lsp_zero.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-
 require('mason').setup({})
 require('mason-lspconfig').setup({
     ensure_installed = {
         'tsserver',
-        'omnisharp',
         'azure_pipelines_ls',
         'jsonls',
         'lua_ls',
