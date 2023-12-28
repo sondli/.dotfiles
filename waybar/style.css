@@ -58,7 +58,7 @@ window#waybar.hidden {
 #pulseaudio,
 #network,
 #clock,
-#temperature
+#temperature,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
