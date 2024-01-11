@@ -24,7 +24,7 @@ require("lazy").setup({
     { "ThePrimeagen/harpoon" },
     { "tpope/vim-fugitive" },
     { "mbbill/undotree" },
-    { "folke/tokyonight.nvim" },
+    { "catppuccin/nvim",                 name = "catppuccin",                             priority = 1000 },
     { "windwp/nvim-ts-autotag" },
     { "nvim-lualine/lualine.nvim" },
     { "mfussenegger/nvim-dap" },
@@ -42,7 +42,7 @@ require("lazy").setup({
             "Issafalcon/neotest-dotnet"
         }
     },
---[[    {
+    --[[    {
         "folke/noice.nvim",
         event = "VeryLazy",
         opts = {},
