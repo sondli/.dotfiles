@@ -60,6 +60,7 @@ window#waybar.hidden {
 #network,
 #clock,
 #temperature,
+#custom-notification,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
@@ -149,4 +150,9 @@ tooltip {
 tooltip label {
   padding: 5px;
   background-color: #131822;
+}
+
+#custom-notification {
+  padding-right: 15px;
+  background-color: #f2cdcd;
 }

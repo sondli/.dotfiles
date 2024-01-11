@@ -20,4 +20,5 @@ else
     ln -s $PWD/xinit/.xinitrc ~/
     ln -s $PWD/alacritty ~/.config
     ln -s $PWD/picom ~/.config
+    ln -s $PWD/swaync ~/.config
 fi  
