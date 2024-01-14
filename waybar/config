@@ -90,6 +90,7 @@
             "default": ["󰖀","󰕾",""]
         },
         "on-click": "pavucontrol",
+        "on-click-right": "amixer set Master toggle",
         "scroll-step": 1
     },
     "custom/logo": {
