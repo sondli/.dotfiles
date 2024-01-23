@@ -6,19 +6,7 @@ ln -s $PWD/nvim ~/.config
 ln -s $PWD/tmux ~/.config
 ln -s $PWD/ranger ~/.config
 ln -s $PWD/starship ~/.config
-
-if [[ $(grep -i Microsoft /proc/version) ]]
-then
-    # WSL specific commands 
-    :
-else
-    # Non-WSL commands
-    ln -s $PWD/polybar ~/.config
-    ln -s $PWD/i3 ~/.config
-    ln -s $PWD/hypr ~/.config
-    ln -s $PWD/waybar ~/.config
-    ln -s $PWD/xinit/.xinitrc ~/
-    ln -s $PWD/alacritty ~/.config
-    ln -s $PWD/picom ~/.config
-    ln -s $PWD/swaync ~/.config
-fi  
+ln -s $PWD/hypr ~/.config
+ln -s $PWD/waybar ~/.config
+ln -s $PWD/alacritty ~/.config
+ln -s $PWD/swaync ~/.config
