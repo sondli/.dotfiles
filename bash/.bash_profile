@@ -6,6 +6,7 @@
 
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 export PATH=$PATH:~/azure-functions-cli
+export PATH=$PATH:~/bin
 
 if [ "{XDG_CURRENT_DESKTOP}" != "Hyprland" ]; then
     if $(xrandr | grep " connected" | grep -q DP2-2) ; then
