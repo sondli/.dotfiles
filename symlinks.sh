@@ -11,3 +11,4 @@ ln -s $PWD/waybar ~/.config
 ln -s $PWD/alacritty ~/.config
 ln -s $PWD/swaync ~/.config
 ln -s $PWD/sway ~/.config
+ln -s $PWD/i3 ~/.config
