@@ -21,18 +21,22 @@ require("lazy").setup({
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { "dylanaraps/wal.vim" },
     { "github/copilot.vim" },
-    { "ThePrimeagen/harpoon" },
     { "tpope/vim-fugitive" },
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
     { "mbbill/undotree" },
-    { "catppuccin/nvim",                 name = "catppuccin",                             priority = 1000 },
+    { "catppuccin/nvim",                name = "catppuccin",                             priority = 1000 },
     { "windwp/nvim-ts-autotag" },
     { "nvim-lualine/lualine.nvim" },
     { "mfussenegger/nvim-dap" },
     { "leoluz/nvim-dap-go" },
-    { "rcarriga/nvim-dap-ui",            dependencies = { "mfussenegger/nvim-dap" } },
+    { "rcarriga/nvim-dap-ui",           dependencies = { "mfussenegger/nvim-dap" } },
     { "theHamsta/nvim-dap-virtual-text" },
-    { "folke/neodev.nvim",               opts = {} },
-    { "nvim-tree/nvim-tree.lua",         dependencies = { "nvim-tree/nvim-web-devicons" } },
+    { "folke/neodev.nvim",              opts = {} },
+    { "nvim-tree/nvim-tree.lua",        dependencies = { "nvim-tree/nvim-web-devicons" } },
     {
         "nvim-neotest/neotest",
         dependencies = {
