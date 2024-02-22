@@ -22,6 +22,7 @@ require("lazy").setup({
     { "dylanaraps/wal.vim" },
     { "github/copilot.vim" },
     { "tpope/vim-fugitive" },
+    { "tpope/vim-commentary" },
     {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
