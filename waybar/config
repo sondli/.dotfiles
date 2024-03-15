@@ -4,7 +4,7 @@
     "spacing": 0,
     "height": 34,
     "modules-left": [
-        "hyprland/workspaces"
+        "sway/workspaces"
     ],
     "modules-center": [
         "clock"
@@ -26,31 +26,6 @@
         "icon-theme": "WhiteSur",
         "icon-size": 25,
         "tooltip-format": "{title}"
-    },
-    "hyprland/workspaces": {
-        "on-click": "activate",
-        "format": "{icon}",
-        "format-icons": {
-            "default": "",
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-           // "active": "󱓻",
-            "urgent": "󱓻"
-        },
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": []
-        }
     },
     "memory": {
         "interval": 5,
@@ -134,11 +109,6 @@
         },
         "tooltip": false
     },
-    "custom/power": {
-        "format": "󰤆",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
-    },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
@@ -172,19 +142,17 @@
         "escape": true
     },
 "sway/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
-    "format": "{name}: {icon}",
-    "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "urgent": "",
-        "focused": "",
-        "default": "",
-        "high-priority-named": ["1", "2"]
-    }
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "urgent": "",
+    "active": "",
+    "default": ""
+  },
+  "sort-by-number": true
 }}
-}

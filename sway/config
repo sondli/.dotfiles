@@ -25,9 +25,13 @@ set $rofi_cmd rofi \
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
 # TODO: add window with the next release of rofi-wayland
-set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+#set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+set $menu bemenu-run --fb "#1e1e2e" --ff "#cdd6f4" --nb "#1e1e2e" --nf "#cdd6f4" --tb "#1e1e2e" --hb "#1e1e2e" --tf "#f38ba8" --hf "#f9e2af" --af "#cdd6f4" --ab "#1e1e2e"
 
-default_border none
+
+default_border pixel 2
+gaps inner 5
+
 
 ### Output configuration
 #
@@ -93,6 +97,9 @@ output * bg /usr/share/backgrounds/default.png fill
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 #
 # Moving around:
 #
@@ -205,6 +212,11 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+bar {
+    swaybar_command waybar
+}
+
 
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
