@@ -30,7 +30,8 @@ require('mason-lspconfig').setup({
         'gopls',
         'rust_analyzer',
         'cssls',
-        'cssmodules_ls'
+        'cssmodules_ls',
+        'clangd'
     },
     handlers = {
         lsp_zero.default_setup,

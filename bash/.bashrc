@@ -15,3 +15,6 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 export DOTNET_ROOT=$HOME/.dotnet
 
 eval "$(starship init bash)"
+
+# Turso
+export PATH="/home/sondli/.turso:$PATH"
