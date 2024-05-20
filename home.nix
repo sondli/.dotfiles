@@ -3,7 +3,8 @@
 {
   imports = [
     ./user/zsh
-    ./user/nvim
+  #  ./user/nvim
+    ./user/nixvim
     ./user/foot
     ./user/sway
     ./user/tmux
@@ -35,6 +36,9 @@
   home.packages = [
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
+
+  programs.nixvim.enable = true;
+
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.

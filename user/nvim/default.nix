@@ -33,6 +33,9 @@
             catppuccin-nvim
             nvim-lspconfig
             vim-nix
+            lsp-zero-nvim
+            nvim-cmp
+            cmp-nvim-lsp
 		];
 		extraLuaConfig = ''
 			${builtins.readFile ./set.lua}
