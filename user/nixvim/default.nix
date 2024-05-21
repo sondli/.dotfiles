@@ -37,6 +37,7 @@
             relativenumber = true;
             numberwidth = 2;
             ruler = false;
+            guicursor = "";
 
             splitbelow = true;
             splitright = true;
@@ -109,20 +110,23 @@
                 };
             };
             cmp = {
+                enable = true;
                 autoEnableSources = true;
                 settings.sources = [
-                { name = "nvim_lsp"; }
-                { name = "path"; }
-                { name = "buffer"; }
+                {name = "nvim_lsp";}
+                {name = "path";}
+                {name = "buffer";}
+                {name = "luasnip";}
                 ];
             };
+            cmp-nvim-lsp.enable = true;
+            cmp-buffer.enable = true;
             nvim-tree = {
                 enable = true;
                 autoClose = true;
                 disableNetrw = true;
             };
         };
-
         keymaps = [
         {
             action = "<Cmd>NvimTreeToggle<CR>";
@@ -137,8 +141,10 @@
             key = "<leader>gs";
         }
         ];
+        extraConfigLua = ''
+            ${builtins.readFile ./lua/remap.lua} 
+        '';
 
     };
-
 
 }
