@@ -128,10 +128,10 @@
             };
         };
         keymaps = [
-        {
-            action = "<Cmd>NvimTreeToggle<CR>";
-            key = "<leader>pv";
-        }
+#        {
+#            action = "<Cmd>NvimTreeToggle<CR>";
+#            key = "<leader>pv";
+#        }
         {
             action = "<Cmd>UndotreeToggle<CR>";
             key = "<leader>u";
@@ -143,6 +143,7 @@
         ];
         extraConfigLua = ''
             ${builtins.readFile ./lua/remap.lua} 
+            ${builtins.readFile ./lua/nvim-tree.lua} 
         '';
 
     };
