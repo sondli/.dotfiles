@@ -10,7 +10,7 @@
         vimAlias = true;
         viAlias = true;
 
-        colorschemes.gruvbox.enable = true;
+        #colorschemes.gruvbox.enable = true;
 
         extraPlugins = with pkgs.vimPlugins; [plenary-nvim];
 
@@ -121,11 +121,7 @@
             };
             cmp-nvim-lsp.enable = true;
             cmp-buffer.enable = true;
-            nvim-tree = {
-                enable = true;
-                autoClose = true;
-                disableNetrw = true;
-            };
+            nvim-tree.enable = true;
         };
         keymaps = [
 #        {
