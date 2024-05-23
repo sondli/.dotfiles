@@ -45,19 +45,10 @@
     environment.systemPackages = with pkgs; [
         git 
         discord
-        foot
         brave
-
-        grim
-        slurp
-        wl-clipboard
-        mako
-
-        bemenu
         fastfetch
         btop
         pavucontrol
-        tmux
         fzf
         ripgrep
     ];

@@ -1,9 +1,14 @@
-{  config, pkgs, ... }:
+{  config, lib, pkgs, ... }:
 
 {
     home.packages = with pkgs; [ 
         sway 
         imv
+        grim
+        slurp
+        wl-clipboard
+        mako
+        bemenu
     ];
 
     wayland.windowManager.sway = {
@@ -12,6 +17,7 @@
             terminal = "foot"; 
             modifier = "Mod1";
             menu = "bemenu-run";
+            defaultWorkspace = "workspace number 1";
             window = {
                 titlebar = false;
             };
@@ -26,6 +32,12 @@
                     xkb_layout = "us,no,ro";
                 };
             };
+            keybindings = let
+                modifier = config.wayland.windowManager.sway.config.modifier;
+            in lib.mkOptionDefault {
+                "Mod1+Shift+u" = "exec grim - | wl-copy";
+                "Mod1+Shift+y" = "exec grim -g '$(slurp)' - | wl-copy";
+            };
         };
         extraConfig = ''
             bar { 
@@ -33,6 +45,8 @@
             }
         '';
     };
+
+    services.mako.enable = true;
 
     programs.waybar = {
         enable = true;
@@ -51,7 +65,7 @@
                 };
                 clock = {
                     "interval" = 1;
-                    "format" = "{:%H:%M %Y-%m-%d %a}";
+                    "format" = "{:%H:%M %Y-%m-%d %a} ";
                     "timezone" = "Europe/Bucharest";
                     "tooltip-format" = ''
                         <big>{:%Y %B}</big>
@@ -85,7 +99,7 @@
 
                 pulseaudio = {
                     "scroll-step" = 1;
-                    "format" = "{icon}  {volume}%";
+                    "format" = " {icon}  {volume}%";
                     "format-bluetooth" = "{icon}  {volume}%  {format_source}";
                     "format-bluetooth-muted" = "󰸈 {icon}  {format_source}";
                     "format-muted" = "󰸈 {format_source}";
@@ -105,4 +119,5 @@
             };
         };
     };
+
 }

@@ -140,6 +140,7 @@
         extraConfigLua = ''
             ${builtins.readFile ./lua/remap.lua} 
             ${builtins.readFile ./lua/nvim-tree.lua} 
+            ${builtins.readFile ./lua/cmp.lua} 
         '';
 
     };

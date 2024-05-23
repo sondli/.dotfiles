@@ -1,3 +1,5 @@
+# TODO: Screenshots, kb layout, notifications
+
 {
     description = "My first flake!";
 
