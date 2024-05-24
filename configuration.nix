@@ -48,8 +48,10 @@
     users.users.sondli = {
         isNormalUser = true;
         description = "sondli";
-        extraGroups = [ "networkmanager" "wheel" "audio" ];
+        extraGroups = [ "networkmanager" "wheel" "audio" "plugdev" ];
     };
+
+    services.udev.extraRules = builtins.readFile ./rules/50-zsa.rules;
 
     nixpkgs.config.allowUnfree = true;
 

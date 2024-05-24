@@ -55,7 +55,7 @@
                 height = 30;
                 spacing = 4;
 
-                modules-left = [ "battery" "backlight" "pulseaudio" "cpu" "memory" ];
+                modules-left = [ "pulseaudio" "cpu" "memory" "backlight" "battery" ];
                 modules-center = [ "sway/workspaces" ];
                 modules-right = [ "tray" "sway/language" "clock" ];
 
