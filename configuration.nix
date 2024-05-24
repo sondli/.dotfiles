@@ -3,11 +3,22 @@
 {
     imports = [
         ./hardware-configuration.nix
-        ./system/gaming.nix
+            ./system/gaming.nix
     ];
 
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
+    boot.loader = {
+        efi.canTouchEfiVariables = true;
+        systemd-boot = {
+            enable = true;
+            configurationLimit = 5;
+        };
+    };
+
+    nix.gc = {
+        automatic = true;
+        dates = "daily";
+        options = "--delete-older-than +5";
+    };
 
     networking.hostName = "desktop";
 
@@ -44,13 +55,13 @@
 
     environment.systemPackages = with pkgs; [
         git 
-        discord
-        brave
-        fastfetch
-        btop
-        pavucontrol
-        fzf
-        ripgrep
+            discord
+            brave
+            fastfetch
+            btop
+            pavucontrol
+            fzf
+            ripgrep
     ];
 
     services.xserver = {
@@ -80,6 +91,7 @@
         };
         pulse.enable = true;
     };
+
 
     system.stateVersion = "23.11";
 
