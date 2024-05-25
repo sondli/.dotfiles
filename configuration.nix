@@ -29,15 +29,15 @@
     i18n.defaultLocale = "en_US.UTF-8";
 
     i18n.extraLocaleSettings = {
-        LC_ADDRESS = "ro_RO.UTF-8";
-        LC_IDENTIFICATION = "ro_RO.UTF-8";
-        LC_MEASUREMENT = "ro_RO.UTF-8";
-        LC_MONETARY = "ro_RO.UTF-8";
-        LC_NAME = "ro_RO.UTF-8";
-        LC_NUMERIC = "ro_RO.UTF-8";
-        LC_PAPER = "ro_RO.UTF-8";
-        LC_TELEPHONE = "ro_RO.UTF-8";
-        LC_TIME = "ro_RO.UTF-8";
+        LC_ADDRESS = "en_US.UTF-8";
+        LC_IDENTIFICATION = "en_US.UTF-8";
+        LC_MEASUREMENT = "en_US.UTF-8";
+        LC_MONETARY = "en_US.UTF-8";
+        LC_NAME = "en_US.UTF-8";
+        LC_NUMERIC = "en_US.UTF-8";
+        LC_PAPER = "en_US.UTF-8";
+        LC_TELEPHONE = "en_US.UTF-8";
+        LC_TIME = "en_US.UTF-8";
     };
 
     services.xserver.xkb = {
