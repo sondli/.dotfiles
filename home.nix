@@ -23,8 +23,8 @@
 
     fonts.fontconfig.enable = true;
 
-    home.packages = [
-        (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    home.packages = with pkgs; [
+        (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];
 
     home.file = {

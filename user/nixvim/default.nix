@@ -10,7 +10,7 @@
         vimAlias = true;
         viAlias = true;
 
-        #colorschemes.gruvbox.enable = true;
+#colorschemes.gruvbox.enable = true;
 
         extraPlugins = with pkgs.vimPlugins; [plenary-nvim];
 
@@ -97,16 +97,20 @@
                     svelte.enable = true;
                     sqls.enable = true;
                 };
-                keymaps.lspBuf = {
-                    K = "hover";
-                    gD = "references";
-                    gd = "definition";
-                    gi = "implementation";
-                    gt = "type_definition";
-#                    "]d" = "goto_next";
-#                    "[d" = "goto_prev";
-#                    "<leader>ca" = "code_action";
-#                    "<leader>rn" = "rename";
+                keymaps = {
+                    lspBuf = {
+                        K = "hover";
+                        gD = "references";
+                        gd = "definition";
+                        gi = "implementation";
+                        gt = "type_definition";
+                        "<leader>ca" = "code_action";
+                        "<leader>rn" = "rename";
+                    };
+                    diagnostic = {
+                        "<leader>j" = "goto_next";
+                        "<leader>k" = "goto_prev";
+                    };
                 };
             };
             cmp = {
@@ -139,8 +143,8 @@
         ];
         extraConfigLua = ''
             ${builtins.readFile ./lua/remap.lua} 
-            ${builtins.readFile ./lua/nvim-tree.lua} 
-            ${builtins.readFile ./lua/cmp.lua} 
+        ${builtins.readFile ./lua/nvim-tree.lua} 
+        ${builtins.readFile ./lua/cmp.lua} 
         '';
 
     };

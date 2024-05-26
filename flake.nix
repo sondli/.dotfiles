@@ -1,5 +1,3 @@
-# TODO: Screenshots, kb layout, notifications
-
 {
     description = "My first flake!";
 
@@ -34,8 +32,8 @@
             sondli = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
                 modules = [ 
-                    stylix.homeManagerModules.stylix
                     ./home.nix
+                    stylix.homeManagerModules.stylix
                     nixvim.homeManagerModules.nixvim
                 ];
             };
