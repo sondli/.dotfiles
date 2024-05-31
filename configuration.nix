@@ -64,6 +64,7 @@
             pavucontrol
             fzf
             ripgrep
+            unzip
     ];
 
     services.xserver = {

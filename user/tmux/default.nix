@@ -9,9 +9,14 @@
         baseIndex = 1;
         prefix = "C-a";
         keyMode = "vi";
+        mouse = true;
         plugins = with pkgs.tmuxPlugins; [
             gruvbox
         ];
+        extraConfig = ''
+            ${builtins.readFile ./binds.conf} 
+        '';
+            
     };
 
 }

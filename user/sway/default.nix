@@ -72,9 +72,9 @@
                         <tt><small>{calendar}</small></tt>'';
                 };
                 cpu = {
-                    "format" = "  {usage}%";
+                    "format" = "   {usage}%";
                 };
-                memory = { "format" = "  {}%"; };
+                memory = { "format" = "   {}%"; };
                 backlight = {
                     "format" = "{icon}  {percent}%";
                     "format-icons" = [ "" "" "" "" "" "" "" "" "" ];
@@ -99,7 +99,7 @@
 
                 pulseaudio = {
                     "scroll-step" = 1;
-                    "format" = " {icon}  {volume}%";
+                    "format" = " {icon}   {volume}%";
                     "format-bluetooth" = "{icon}  {volume}%  {format_source}";
                     "format-bluetooth-muted" = "󰸈 {icon}  {format_source}";
                     "format-muted" = "󰸈 {format_source}";

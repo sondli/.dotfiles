@@ -2,7 +2,7 @@
 
 {
     stylix = {
-        image = ./../../wallpapers/pyramids.jpg;
+        image = ./../../wallpapers/anime_skull.png;
         base16Scheme =
             "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
         fonts = {
