@@ -55,7 +55,7 @@
                 height = 30;
                 spacing = 4;
 
-                modules-left = [ "pulseaudio" "cpu" "memory" "backlight" "battery" ];
+                modules-left = [ "pulseaudio" "cpu" "memory" "network" "backlight" "battery" ];
                 modules-center = [ "sway/workspaces" ];
                 modules-right = [ "tray" "sway/language" "clock" ];
 
@@ -116,8 +116,19 @@
                     };
                     "on-click" = "exec pavucontrol";
                 };
+                network = {
+                    "interface" = "wlp16s0u5";
+                    "format" = "{ifname}";
+                    "format-wifi" = "   ({signalStrength}%) ";
+                    "format-ethernet" = "{ipaddr}/{cidr} 󰊗";
+                    "format-disconnected" = "";
+                    "tooltip-format" = "{ifname} via {gwaddr} 󰊗";
+                    "tooltip-format-wifi" = "{essid} ({signalStrength}%) ";
+                    "tooltip-format-ethernet" = "{ifname} ";
+                    "tooltip-format-disconnected" = "Disconnected";
+                    "max-length" = 50;
+                };
             };
         };
     };
-
 }
