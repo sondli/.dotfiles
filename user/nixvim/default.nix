@@ -92,6 +92,7 @@
                     html.enable = true;
                     gopls.enable = true;
                     cssls.enable = true;
+                    clangd.enable = true;
                     jsonls.enable = true;
                     tsserver.enable = true;
                     svelte.enable = true;
