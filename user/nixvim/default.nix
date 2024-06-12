@@ -26,9 +26,9 @@
             hlsearch = false;
             incsearch = true;
 
-            shiftwidth = 4;
-            tabstop = 4;
-            softtabstop = 4;
+            shiftwidth = 2;
+            tabstop = 2;
+            softtabstop = 2;
             expandtab = true;
             smartindent = true;
 
@@ -50,7 +50,7 @@
             colorcolumn = "120";
 
             updatetime = 100;
-            timeout = true;
+            timeout = false;
             timeoutlen = 500;
 
             foldlevel = 99;
@@ -81,7 +81,7 @@
             lsp = {
                 enable = true;
                 servers = {
-                    nil_ls.enable = true;
+                    nil-ls.enable = true;
                     lua-ls.enable = true;
                     rust-analyzer = {
                         enable = true;

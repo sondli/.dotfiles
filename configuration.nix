@@ -21,7 +21,6 @@
     };
 
     networking.hostName = "desktop";
-
     networking.networkmanager.enable = true;
 
     time.timeZone = "Europe/Bucharest";
@@ -58,14 +57,14 @@
     environment.systemPackages = with pkgs; [
         git 
         google-chrome
-            discord
-            brave
-            fastfetch
-            btop
-            pavucontrol
-            fzf
-            ripgrep
-            unzip
+        discord
+        brave
+        fastfetch
+        btop
+        pavucontrol
+        fzf
+        ripgrep
+        unzip
     ];
 
     services.xserver = {
