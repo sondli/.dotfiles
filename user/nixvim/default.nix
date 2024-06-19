@@ -66,7 +66,6 @@
 			treesitter.enable = true;
 			luasnip.enable = true;
 			undotree.enable = true;
-			lsp-format.enable = true;
 			lsp = {
 				enable = true;
 				servers = {

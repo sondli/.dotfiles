@@ -57,14 +57,14 @@
     environment.systemPackages = with pkgs; [
         git 
         google-chrome
-        discord
-        brave
-        fastfetch
-        btop
-        pavucontrol
-        fzf
-        ripgrep
-        unzip
+            discord
+            brave
+            fastfetch
+            btop
+            pavucontrol
+            fzf
+            ripgrep
+            unzip
     ];
 
     services.xserver = {
