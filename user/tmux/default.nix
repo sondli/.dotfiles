@@ -10,6 +10,7 @@
         prefix = "C-a";
         keyMode = "vi";
         mouse = true;
+        escapeTime = 0;
         plugins = with pkgs.tmuxPlugins; [
             gruvbox
         ];
