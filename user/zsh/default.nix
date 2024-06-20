@@ -10,7 +10,8 @@
       ll = "ls -lah";
       update = "home-manager switch --flake ~/.dotfiles/";
       sd = "cd ~ && cd \$(find * -type d | fzf)";
-      rustdev = "nix-shell -p rustc cargo rustfmt gdb";
+      rustdev = "nix-shell ~/.dotfiles/shells/rust.nix";
+			dotnetdev = "nix-shell ~/.dotfiles/shells/dotnet.nix";
     };
     plugins = [
       {
