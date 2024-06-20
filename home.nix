@@ -1,38 +1,36 @@
 { config, pkgs, ... }:
 
 {
-    imports = [
-        ./user/zsh
-            ./user/nixvim
-            ./user/foot
-            ./user/sway
-            ./user/tmux
-            ./user/stylix
-    ];	
+  imports = [
+    ./user/zsh
+    ./user/nixvim
+    ./user/foot
+    ./user/sway
+    ./user/tmux
+    ./user/stylix
+  ];
 
-    home.username = "sondli";
-    home.homeDirectory = "/home/sondli";
+  home.username = "sondli";
+  home.homeDirectory = "/home/sondli";
 
-    programs.git = {
-        enable = true;
-        userName = "sondli";
-        userEmail = "sondre.lillelien@gmail.com";
-    };
+  programs.git = {
+    enable = true;
+    userName = "sondli";
+    userEmail = "sondre.lillelien@gmail.com";
+  };
 
-    home.stateVersion = "23.11"; 
+  home.stateVersion = "23.11";
 
-    fonts.fontconfig.enable = true;
+  fonts.fontconfig.enable = true;
 
-    home.packages = with pkgs; [
-        (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-    ];
+  home.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
 
-    home.file = {
-    };
+  home.file = { };
 
 
-    home.sessionVariables = {
-    };
+  home.sessionVariables = { };
 
-    programs.home-manager.enable = true;
+  programs.home-manager.enable = true;
 }

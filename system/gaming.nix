@@ -2,21 +2,21 @@
 
 {
 
-    hardware.opengl = {
-        enable = true;
-        driSupport = true;
-        driSupport32Bit = true;
-    };
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
 
-    services.xserver.videoDrivers = ["amdgpu"];
+  services.xserver.videoDrivers = [ "amdgpu" ];
 
-    programs.steam.enable = true;
-    programs.steam.gamescopeSession.enable = true;
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
 
-    environment.systemPackages = with pkgs; [
-        mangohud
-    ];
+  environment.systemPackages = with pkgs; [
+    mangohud
+  ];
 
-    programs.gamemode.enable = true;
+  programs.gamemode.enable = true;
 
 }

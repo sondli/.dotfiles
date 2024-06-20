@@ -3,7 +3,7 @@
 {
   stylix = {
     enable = true;
-    image = ./../../wallpapers/anime_skull.png;
+    image = ./../../wallpapers/nix.png;
     base16Scheme =
       "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     fonts = {

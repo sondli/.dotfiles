@@ -1,16 +1,17 @@
 { config, pkgs, ... }:
 
-{   
-	home.packages = with pkgs; [ starship ];
+{
+  home.packages = with pkgs; [ starship ];
 
-	programs.zsh = {
-		enable = true;
-		enableCompletion = true;
-		shellAliases = {
-			ll = "ls -lah";
-			update = "home-manager switch --flake ~/.dotfiles/";
-			rustdev = "nix-shell -p rustc cargo rustfmt";
-		};
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    shellAliases = {
+      ll = "ls -lah";
+      update = "home-manager switch --flake ~/.dotfiles/";
+      sd = "cd ~ && cd \$(find * -type d | fzf)";
+      rustdev = "nix-shell -p rustc cargo rustfmt gdb";
+    };
     plugins = [
       {
         name = "zsh-nix-shell";
@@ -23,11 +24,11 @@
         };
       }
     ];
-	};
+  };
 
-	programs.starship = {
-		enable = true;
-		enableZshIntegration = true;
-	};
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 
 }

@@ -1,15 +1,15 @@
-{ config, pkgs, ...}: 
+{ config, pkgs, ... }:
 
 {
-    home.packages = with pkgs; [ foot ];
+  home.packages = with pkgs; [ foot ];
 
-    programs.foot = {
-        enable = true;
-        settings = {
-            main = {
-                font = "JetBrainsMono Nerd Font:size=12";
-            };
-        };
-
+  programs.foot = {
+    enable = true;
+    settings = {
+      main = {
+        font = "JetBrainsMono Nerd Font:size=12";
+      };
     };
+
+  };
 }
