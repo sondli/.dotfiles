@@ -11,7 +11,7 @@
       update = "home-manager switch --flake ~/nixfiles/";
       sd = "cd ~ && cd \$(find * -type d | fzf)";
       rustdev = "nix-shell ~/nixfiles/shells/rust.nix";
-			dotnetdev = "nix-shell ~/nixfiles/shells/dotnet.nix";
+      dotnetdev = "nix-shell ~/nixfiles/shells/dotnet.nix";
     };
     plugins = [
       {

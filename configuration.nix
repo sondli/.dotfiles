@@ -58,7 +58,6 @@
     git
     discord
     brave
-		firefox
     fastfetch
     btop
     pavucontrol

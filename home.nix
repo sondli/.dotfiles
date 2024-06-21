@@ -8,6 +8,7 @@
     ./user/sway
     ./user/tmux
     ./user/stylix
+    ./user/firefox
   ];
 
   home.username = "sondli";
