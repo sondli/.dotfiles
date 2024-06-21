@@ -83,7 +83,9 @@
       lsp = {
         enable = true;
         servers = {
-          nil-ls.enable = true;
+          nil-ls = {
+            enable = true;
+          };
           lua-ls = {
             enable = true;
             settings.diagnostics.globals = [ "vim" ];
