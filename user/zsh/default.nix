@@ -8,10 +8,10 @@
     enableCompletion = true;
     shellAliases = {
       ll = "ls -lah";
-      update = "home-manager switch --flake ~/.dotfiles/";
+      update = "home-manager switch --flake ~/nixfiles/";
       sd = "cd ~ && cd \$(find * -type d | fzf)";
-      rustdev = "nix-shell ~/.dotfiles/shells/rust.nix";
-			dotnetdev = "nix-shell ~/.dotfiles/shells/dotnet.nix";
+      rustdev = "nix-shell ~/nixfiles/shells/rust.nix";
+			dotnetdev = "nix-shell ~/nixfiles/shells/dotnet.nix";
     };
     plugins = [
       {

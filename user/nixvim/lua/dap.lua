@@ -26,7 +26,22 @@ dap.configurations.rust = {
 		cwd = "${workspaceFolder}",
 		stopAtBeginningOfMainSubprogram = false,
 		args = function()
-			return vim.fn.input("Arguments: ", "file")
+			local requestArgs = function()
+				return vim.fn.input({
+					prompt = 'Args: ',
+					completion = 'file'
+				})
+			end
+
+			if vim.g['rust_last_args'] == nil then
+				vim.g['rust_last_args'] = requestArgs()
+			else
+				if vim.fn.confirm('Do you want to change the arguments?\n' .. vim.g['rust_last_args'],
+							'&yes\n&no', 2) == 1 then
+					vim.g['rust_last_args'] = requestArgs()
+				end
+			end
+			return vim.g['rust_last_args']
 		end
 	},
 }

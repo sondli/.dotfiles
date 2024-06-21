@@ -56,9 +56,9 @@
 
   environment.systemPackages = with pkgs; [
     git
-    google-chrome
     discord
     brave
+		firefox
     fastfetch
     btop
     pavucontrol
