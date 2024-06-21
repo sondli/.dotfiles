@@ -9,6 +9,7 @@
     ./user/tmux
     ./user/stylix
     ./user/firefox
+    ./user/yazi
   ];
 
   home.username = "sondli";
