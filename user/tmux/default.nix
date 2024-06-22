@@ -11,6 +11,7 @@
     keyMode = "vi";
     mouse = true;
     escapeTime = 0;
+		terminal = "screen-256color";
     plugins = with pkgs.tmuxPlugins; [
       gruvbox
     ];
