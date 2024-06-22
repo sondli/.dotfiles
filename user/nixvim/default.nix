@@ -51,7 +51,7 @@
     };
 
     plugins = {
-      lightline.enable = true;
+      lualine.enable = true;
       fugitive.enable = true;
       telescope = {
         enable = true;
