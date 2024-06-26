@@ -48,6 +48,8 @@
       winwidth = 10;
       winminwidth = 10;
       equalalways = false;
+
+			conceallevel = 1;
     };
 
     plugins = {
@@ -66,20 +68,26 @@
       treesitter.enable = true;
       luasnip.enable = true;
       undotree.enable = true;
-			obsidian = {
-				settings = {
-					workspaces = [
-						{
-							name = "personal";
-							path = "~/vaults/personal";
-						}
-						{
-							name = "work";
-							path = "~/vaults/work";
-						}
-					];
-				};
-			};
+      obsidian = {
+        enable = true;
+        settings = {
+          workspaces = [
+            {
+              name = "personal";
+              path = "~/vaults/personal";
+            }
+            {
+              name = "work";
+              path = "~/vaults/work";
+            }
+          ];
+        };
+      };
+      noice = {
+        enable = true;
+        notify.enabled = false;
+        messages.enabled = false;
+      };
       dap = {
         enable = true;
         adapters.executables = {
@@ -92,7 +100,7 @@
           dap-ui = {
             enable = true;
           };
-					dap-virtual-text.enable = true;
+          dap-virtual-text.enable = true;
         };
       };
       lsp = {
@@ -179,6 +187,10 @@
       {
         action = ''<Cmd>lua require("dap").step_into()<CR>'';
         key = "<leader>di";
+      }
+      {
+        action = ''<Cmd>ObsidianNew<CR>'';
+        key = "<leader>on";
       }
     ];
     extraConfigLua = ''

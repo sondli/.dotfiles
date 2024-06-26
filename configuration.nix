@@ -63,7 +63,7 @@
     fzf
     ripgrep
     unzip
-		obsidian
+    obsidian
   ];
 
   services.xserver = {

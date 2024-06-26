@@ -5,19 +5,19 @@
 
   programs.zsh = {
     enable = true;
-		autosuggestion.enable = true;
-		enableCompletion = true;
+    autosuggestion.enable = true;
+    enableCompletion = true;
     shellAliases = {
       ll = "ls -lah";
       update = "home-manager switch --flake ~/nixfiles/";
       sd = "cd ~ && cd \$(find * -type d | fzf)";
-			yz = "yazi";
+      yz = "yazi";
       rustdev = "nix-shell ~/nixfiles/shells/rust.nix";
       dotnetdev = "nix-shell ~/nixfiles/shells/dotnet.nix";
     };
-		initExtra = ''
-			bindkey '^I' autosuggest-accept
-		'';
+    initExtra = ''
+      			bindkey '^I' autosuggest-accept
+      		'';
     plugins = [
       {
         name = "zsh-nix-shell";
