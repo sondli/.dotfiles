@@ -19,6 +19,9 @@
     enable = true;
     userName = "sondli";
     userEmail = "sondre.lillelien@gmail.com";
+		extraConfig = {
+			init.defaultBranch = "main";
+		};
   };
 
   home.stateVersion = "23.11";

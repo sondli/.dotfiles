@@ -66,6 +66,20 @@
       treesitter.enable = true;
       luasnip.enable = true;
       undotree.enable = true;
+			obsidian = {
+				settings = {
+					workspaces = [
+						{
+							name = "personal";
+							path = "~/vaults/personal";
+						}
+						{
+							name = "work";
+							path = "~/vaults/work";
+						}
+					];
+				};
+			};
       dap = {
         enable = true;
         adapters.executables = {
@@ -78,6 +92,7 @@
           dap-ui = {
             enable = true;
           };
+					dap-virtual-text.enable = true;
         };
       };
       lsp = {

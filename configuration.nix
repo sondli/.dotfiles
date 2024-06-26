@@ -57,13 +57,13 @@
   environment.systemPackages = with pkgs; [
     git
     discord
-    brave
     fastfetch
     btop
     pavucontrol
     fzf
     ripgrep
     unzip
+		obsidian
   ];
 
   services.xserver = {
